@@ -26,4 +26,14 @@ for d in */; do d=${d%/}; [ -L "$d" ] || [ "$d" = notebooklm ] || [ "$d" = synce
 cd ~/claude-skills && git add -A && git commit -m "Actualiza skills" && git push
 ```
 
-No guardar llaves ni contraseñas dentro de las skills: el repositorio es privado, pero el historial es permanente.
+## Licencias
+
+Este repositorio es público. Algunas skills no son originales de Corestack y conservan su licencia:
+
+- `frontend-design`: Apache 2.0 (ver `skills/frontend-design/LICENSE.txt`).
+- `prompt-engineer`: MIT (ver `skills/prompt-engineer/LICENSE`).
+- `database-schema-designer`: MIT + Commons Clause (no se puede vender).
+
+Las demás no declaran licencia en su `SKILL.md`. Si eres autor de alguna y quieres que se retire, abre un issue.
+
+No guardar llaves ni contraseñas dentro de las skills: el historial de git es permanente.
